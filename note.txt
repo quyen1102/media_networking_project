@@ -1,0 +1,3 @@
+Các bước làm:
+    - install npm, express, nodemon, 
+    - 
