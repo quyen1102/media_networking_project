@@ -24,7 +24,8 @@
   "homepage": "https://github.com/quyen1102/media_networking_project#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^6.0.1"
+    "express-handlebars": "^6.0.1",
+    "mongoose": "^6.0.13"
   },
   "devDependencies": {
     "node-sass": "^6.0.1",
