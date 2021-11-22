@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <div class="item-row  border">
+                    <div class="item-row  ">
                         <div class="icon more">
                             <img src="img/icons/arrow-down.svg" alt="">
                         </div>
@@ -368,6 +368,10 @@
                             <img src="img/posts/1.jpg" alt="">
                         </div>
 
+                         <div class="quantity-likes">
+                            <span><i class="fas fa-heart"></i></span><div>100k likes...</div>
+                        </div>
+
                         <div class="actions-container">
                             <div class="action">
                                 <div class="icon">
@@ -423,7 +427,105 @@
 
 
                     </div>
+
+                    
                 </div>
+
+                {{#each post}}
+                <div class="view view-post-container smaller-margin">
+                    <div class="view-post">
+                        <div class="upper">
+                            <div class="d-flex">
+                                <div class="user">
+                                    <div class="profile">
+                                        <img src="{{this.photo}}" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="info">
+                                    <h6 class="name">
+                                        monica
+                                    </h6>
+                                    <span class="time">1 hour ago</span>
+                                </div>
+                            </div>
+
+                            <div class="dots">
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+
+                        <div class="desc">
+                            <p>{{this.status}}</p>
+                        </div>
+
+                        <div class="post-img">
+                            <img src="{{this.photo}}" alt="">
+                        </div>
+
+                        <div class="quantity-likes">
+                            <span><i class="fas fa-heart"></i></span><div>{{this.likes}} likes...</div>
+                        </div>
+
+                        <div class="actions-container">
+                            <div class="action">
+                                <div class="icon">
+                                    <img src="img/icons/thumbs-up.svg" alt="">
+                                </div>
+                                <span>
+                                    like
+                                </span>
+                            </div>
+
+                            <div class="action">
+                                <div class="icon">
+                                    <img src="img/icons/comment.svg" alt="">
+                                </div>
+                                <span>
+                                    comment
+                                </span>
+                            </div>
+
+                            <div class="action">
+                                <div class="icon">
+                                    <img src="img/icons/share.svg" alt="">
+                                </div>
+                                <span>
+                                    share
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="write-comment">
+                            <div class="user">
+                                <div class="profile">
+                                    <img src="img/avatar/hero.png" alt="">
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input type="text" placeholder="Write a comment" name="" id="">
+                                <div class="media">
+                                    <div class="icon">
+                                        <img src="img/icons/camera.svg" alt="">
+                                    </div>
+
+                                    <div class="icon">
+                                        <img src="img/icons/image.svg" alt="">
+                                    </div>
+
+                                    <div class="icon">
+                                        <img src="img/icons/smile-2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    
+                </div>
+                {{/each}}
                 <!--people you may know-->
                 <div class="view friends smaller-margin">
                     <div class="upper">
@@ -546,7 +648,7 @@
                 </div>
 
                 <div class="menu-item">
-                    <div class="item-row  border">
+                    <div class="item-row  ">
                         <div class="icon more">
                             <img src="img/icons/arrow-down.svg" alt="">
                         </div>

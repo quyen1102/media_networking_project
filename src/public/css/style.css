@@ -622,14 +622,19 @@ nav .right-side .user-icons .icon.has-notification::after {
 .posts .view .view-post .actions-container {
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-top: 2px solid var(--border-bottom);
+  padding: 10px 0; }
 
 .posts .view .view-post .actions-container .action {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  flex: 1; }
+  flex: 1;
+  cursor: pointer; }
+
+.posts .view .view-post .actions-container .action:hover {
+  opacity: 0.8; }
 
 .posts .view .view-post .actions-container .action .icon {
   height: 20px;
@@ -639,6 +644,7 @@ nav .right-side .user-icons .icon.has-notification::after {
 .posts .view .view-post .write-comment .input .media .icon img {
   height: 100%;
   width: 100%;
+  margin-bottom: 2px;
   object-fit: contain; }
 
 .posts .view .view-post .actions-container .action span {
@@ -656,8 +662,7 @@ nav .right-side .user-icons .icon.has-notification::after {
 
 .posts .view .view-post .write-comment {
   padding: 10px 0 0 0;
-  border-top: 2px solid var(--border-bottom);
-  margin: 10px 0 0 0; }
+  border-top: 2px solid var(--border-bottom); }
 
 .posts .view .view-post .write-comment .input {
   width: 100%;

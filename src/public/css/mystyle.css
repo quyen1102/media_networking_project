@@ -1,0 +1,11 @@
+.quantity-likes {
+  font-size: 18px;
+  color: var(--font);
+  display: flex;
+  margin-top: 4px; }
+
+.quantity-likes i {
+  color: #ac0303; }
+
+.quantity-likes > div {
+  margin-left: 8px; }
